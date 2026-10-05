@@ -28,17 +28,17 @@ function typeNext() {
 }
 typeNext();
 
-// document.addEventListener("keydown",(event)=>{
-//     if(event.shiftKey && event.ctrlKey && event.key === "C"){
-//         event.preventDefault();
-//     }
-//     if(event.key === "F12"){
-//         event.preventDefault();
-//     }
-// });
-// document.addEventListener("contextmenu",(e)=>{
-//     e.preventDefault();
-// });
+document.addEventListener("keydown",(event)=>{
+    if(event.shiftKey && event.ctrlKey && event.key === "C"){
+        event.preventDefault();
+    }
+    if(event.key === "F12"){
+        event.preventDefault();
+    }
+});
+document.addEventListener("contextmenu",(e)=>{
+    e.preventDefault();
+});
 
 document.addEventListener("copy",(ev)=>{
     ev.preventDefault();

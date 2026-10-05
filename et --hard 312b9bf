@@ -1,0 +1,19 @@
+[33m68a0e87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to 68a0e87
+[33m503a773[m HEAD@{1}: reset: moving to HEAD~3
+[33m43e239e[m HEAD@{2}: reset: moving to HEAD~3
+[33m312b9bf[m HEAD@{3}: commit (merge): Merge branch 'main' of https://github.com/iamluckymali/Portfolio
+[33m25050a6[m HEAD@{4}: commit: Optimize performance scores and update skills section
+[33m0dffc7c[m HEAD@{5}: reset: moving to HEAD~
+[33m68a0e87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{6}: reset: moving to HEAD~
+[33m03f425c[m HEAD@{7}: commit: Optimize performance scores and update skills section
+[33m68a0e87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{8}: reset: moving to HEAD~
+[33m16e9ba8[m HEAD@{9}: commit: Optimize performance scores and update skills section
+[33m68a0e87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{10}: commit: Added typewriter effect using JavaScript library
+[33m0dffc7c[m HEAD@{11}: commit: Update heading styles
+[33m43e239e[m HEAD@{12}: commit: Update portfolio links and content
+[33mc2ac4a9[m HEAD@{13}: commit: Fix Tailwind build dependencies
+[33m1e76fce[m HEAD@{14}: commit: Add production build script
+[33m503a773[m HEAD@{15}: commit: Initial portfolio setup
+[33ma1dabc3[m HEAD@{16}: reset: moving to a1dabc3a62d019ebd16f2f6c73caf913b592ee9d
+[33m8760394[m HEAD@{17}: commit: Initial portfolio setup
+[33ma1dabc3[m HEAD@{18}: commit (initial): Initial commit
