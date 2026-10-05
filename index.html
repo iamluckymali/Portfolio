@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="/assets/Lucky_Logo.webp"
 </head>
 <style>
     .container {
@@ -49,7 +49,7 @@
 
                 <nav class="links z-40 flex flex-col fixed top-16 left-0 w-full bg-black text-white px-5 text-center gap-10
     max-h-0 opacity-0 overflow-hidden py-0
-    transition-all duration-500 ease-in-out peer-checked:max-h-[500px] peer-checked:opacity-100 peer-checked:py-7
+    transition-all duration-500 ease-in-out peer-checked:max-h-125 peer-checked:opacity-100 peer-checked:py-7
                 md:flex-row md:static md:h-auto md:w-auto md:max-h-none md:opacity-100 md:overflow-visible 
     md:text-900-ink md:bg-white md:p-0 md:text-left md:gap-10 font-medium">
                     <a href="#home" class="hover:text-600-blue relative group">Home
@@ -100,7 +100,7 @@
                             accessible, and pixel-perfect interfaces from first sketch to production deploy.</p>
 
                         <div
-                            class="button flex flex-col md:flex-row mt-10 font-semibold font-body gap-5 items-center hidden">
+                            class="button flex-col md:flex-row mt-10 font-semibold font-body gap-5 items-center hidden">
                             <a href=""
                                 class="bg-700-blue text-white px-6 py-4 rounded-full hover:transition-transform hover:-translate-y-1.5 duration-300">View
                                 Projects</a>
@@ -112,23 +112,33 @@
                         <div
                             class="icons flex flex-row gap-4 font-body mt-9 items-center justify-center md:justify-start">
                             <!-- GitHub -->
-                            <a href="https://github.com/ItsLucky727" target="_blank"
-                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300">
+                            <a href="https://github.com/iamluckymali" target="_blank"
+                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300"
+                                aria-label="Visit Github Profile" rel="noopener">
                                 <i class="fa-brands fa-github text-lg text-900-ink group-hover:text-white"></i>
                             </a>
                             <!-- Discord -->
                             <a href="https://discord.gg/gMxeMAjaPX" target="_blank"
-                                class="px-3.5 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300">
+                                class="px-3.5 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300"
+                                aria-label="Connect on Discord" rel="noopener">
                                 <i class="fa-brands fa-discord text-lg text-900-ink group-hover:text-white"></i>
                             </a>
                             <!-- Twitter -->
-                            <a href="https://x.com/Lucky66667229" target="_blank"
-                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300">
+                            <a href="https://x.com/iamluckymali" target="_blank"
+                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300"
+                                aria-label="Visit Twitter Profile" rel="noopener">
                                 <i class="fa-brands fa-twitter text-lg text-900-ink group-hover:text-white"></i>
                             </a>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/lucky-mali-68a182430/" target="_blank"
+                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300"
+                                aria-label="Visit Linkedin Profile" rel="noopener">
+                                <i class="fa-brands fa-linkedin-in text-lg text-900-ink group-hover:text-white"></i>
+                            </a>
                             <!-- Email -->
-                            <a href="mailto:malilucky775@gmail.com" target="_blank"
-                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300">
+                            <a href="mailto:malilucky775@gmail.com"
+                                class="px-4 py-3.5 border border-300-ink rounded-md group hover:bg-600-blue hover:transition-transform hover:-translate-y-1 duration-300"
+                                aria-label="Send Email" rel="noopener">
                                 <i class="fa-regular fa-envelope text-lg text-900-ink group-hover:text-white"></i>
                             </a>
                         </div>
@@ -142,7 +152,8 @@
                             <span class="font-mono ml-2 text-300-ink text-sm leading-5" id="cardTitle"></span>
                         </div>
                         <div class="code py-7 px-6 font-mono text-sm leading-6">
-                            <div class="text-[#a7b6d6]"><span class="text-400-blue">const</span> <span id="dev"></span></div>
+                            <div class="text-[#a7b6d6]"><span class="text-400-blue">const</span> <span id="dev"></span>
+                            </div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">name</span>: <span
                                     class="text-[#7ee6b0]" id="name"></span>,
                             </div>
@@ -150,13 +161,16 @@
                                     class="text-[#7ee6b0]" id="role"></span>,
                             </div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">stack</span>: [<span
-                                    class="text-[#7ee6b0]" id="html"></span>, <span id="css" class="text-[#7ee6b0]"></span>],
+                                    class="text-[#7ee6b0]" id="html"></span>, <span id="css"
+                                    class="text-[#7ee6b0]"></span>, <span id="js" class="text-[#7ee6b0]"></span>],
                             </div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">focus</span>: <span
                                     class="text-[#7ee6b0]" id="focus"></span>,</div>
-                            <div class="text-[#5c6b8a]">&nbsp;&nbsp;<span>// always shipping</span></div>
-                            <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">available</span>: <span
-                                    class="text-400-blue" id="available"></span></div>
+                            <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">status</span>: <span
+                                    class="text-[#7ee6b0]" id="status"></span>,</div>
+                            <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">openToWork</span>:
+                                <span class="text-400-blue" id="available"></span>
+                            </div>
                             <div class="text-[#a7b6d6]">};</div>
                         </div>
                     </div>
@@ -168,11 +182,11 @@
             <div class="container">
                 <div class="flex justify-center">
 
-                    <div
-                        class="flex items-center flex-col mb-5 px-4 py-2 rounded-full group">
+                    <div class="flex items-center flex-col mb-5 px-4 py-2 rounded-full group">
 
                         <span class="ml-2 text-2xl font-semibold text-600-blue font-display ">About Me</span>
-                        <span class="h-0.5 w-0 group-hover:w-16 ml-1 group-hover:bg-700-ink -mt-0.5 rounded-full transition-all duration-300"></span>
+                        <span
+                            class="h-0.5 w-0 group-hover:w-16 ml-1 group-hover:bg-700-ink -mt-0.5 rounded-full transition-all duration-300"></span>
                     </div>
                 </div>
 
@@ -185,11 +199,12 @@
 
 
 
-                <div class="flex justify-between flex-col md:flex-row mt-12 md:gap-x-16 gap-y-7">
+                <div class="flex justify-between sm:items-center flex-col md:flex-row mt-12 md:gap-x-16 gap-y-7">
                     <div
                         class="about-card shrink-0 flex flex-col items-center justify-center max-h-146 h-auto w-auto md:w-md max-w-md bg-white shadow-md rounded-3xl py-7 px-6">
-                        <div class="logo w-full bg-400-blue h-80 rounded-sm ">
-
+                        <div class="logo flex justify-center w-full rounded-sm object-cover">
+                            <img src="/assets/Lucky_Logo.webp" alt="logo" class="h-80" draggable="false"
+                                fetchpriority="high">
                         </div>
                         <div class="mt-7 text-center flex items-center flex-col justify-center">
                             <span class="text-900-ink font-bold font-display text-2xl">Lucky Mali</span>
@@ -199,16 +214,12 @@
                         </div>
                         <div class="flex flex-row justify-between items-center gap-x-8 md:gap-20">
                             <div class="flex flex-col text-center justify-center">
+                                <span class="font-display text-900-ink font-bold text-xl mb-1.5">6+</span>
+                                <span class="font-body text-500-ink text-xs">Months Exp.</span>
+                            </div>
+                            <div class="flex flex-col text-center justify-center">
                                 <span class="font-display text-900-ink font-bold text-xl mb-1.5">4+</span>
-                                <span class="font-body text-500-ink text-xs">Years Exp.</span>
-                            </div>
-                            <div class="flex flex-col text-center justify-center">
-                                <span class="font-display text-900-ink font-bold text-xl mb-1.5">40+</span>
                                 <span class="font-body text-500-ink text-xs">Projects</span>
-                            </div>
-                            <div class="flex flex-col text-center justify-center">
-                                <span class="font-display text-900-ink font-bold text-xl mb-1.5">18</span>
-                                <span class="font-body text-500-ink text-xs">Clients</span>
                             </div>
                         </div>
                     </div>
@@ -218,64 +229,65 @@
                             high-performance interfaces using modern HTML and CSS. I care deeply about
                             typography, spacing, and the small details that make an interface feel considered rather
                             than assembled.</p>
-                        <p class="text-700-ink text-lg mt-10">Over the past four years I've worked with startups and
+                        <p class="text-700-ink text-lg mt-10">Over the past six months I've worked with startups and
                             agencies
                             to turn Figma files and rough ideas into production-ready front-ends always prioritizing
                             accessibility, performance, and maintainable code.
                         </p>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                            <div
-                                class="box1 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
-                                <div
-                                    class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
-                                    <i class="fa-solid fa-shop"></i>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="font-display font-bold">Experience</span>
-                                    <p class="text-500-ink text-sm mt-1.5">4+ years crafting production front-ends for
-                                        startups & agencies.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="box2 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
-                                <div
-                                    class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="font-display font-bold">Education</span>
-                                    <p class="text-500-ink text-sm mt-1.5">B.Sc. in Computer Science, self-taught in
-                                        modern front-end tooling..</p>
-                                </div>
-                            </div>
-                            <div
-                                class="box3 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
-                                <div
-                                    class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="font-display font-bold">Passion</span>
-                                    <p class="text-500-ink text-sm mt-1.5">Obsessed with clean UI, smooth interactions,
-                                        and thoughtful details.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="box4 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
-                                <div
-                                    class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
-                                    <i class="fa-solid fa-bullseye"></i>
-                                </div>
-                                <div class="flex flex-col">
-                                    <span class="font-display font-bold">Goals</span>
-                                    <p class="text-500-ink text-sm mt-1.5">Growing into a design-minded front-end lead
-                                        role within a product team.</p>
-                                </div>
-                            </div>
-
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <div
+                        class="box1 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        <div
+                            class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display font-bold">Experience</span>
+                            <p class="text-500-ink text-sm mt-1.5">6+ Months crafting production front-ends for
+                                startups & agencies.</p>
                         </div>
                     </div>
+                    <div
+                        class="box2 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        <div
+                            class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display font-bold">Education</span>
+                            <p class="text-500-ink text-sm mt-1.5">Diploma in Computer Engineering, self-taught
+                                in
+                                modern front-end tooling..</p>
+                        </div>
+                    </div>
+                    <div
+                        class="box3 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        <div
+                            class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display font-bold">Passion</span>
+                            <p class="text-500-ink text-sm mt-1.5">Obsessed with clean UI, smooth interactions,
+                                and thoughtful details.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="box4 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        <div
+                            class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display font-bold">Goals</span>
+                            <p class="text-500-ink text-sm mt-1.5">Growing into a design-minded front-end lead
+                                role within a product team.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -284,11 +296,11 @@
             <div class="container">
                 <div class="flex items-center flex-col text-center">
 
-                    <div
-                        class="flex items-center flex-col mb-5 px-4 py-2 rounded-full group">
+                    <div class="flex items-center flex-col mb-5 px-4 py-2 rounded-full group">
 
                         <span class="ml-2 text-2xl font-semibold text-600-blue font-display ">Skills & Tools</span>
-                        <span class="h-0.5 w-0 group-hover:w-24 ml-1 group-hover:bg-700-ink -mt-0.5 rounded-full transition-all duration-300"></span>
+                        <span
+                            class="h-0.5 w-0 group-hover:w-24 ml-1 group-hover:bg-700-ink -mt-0.5 rounded-full transition-all duration-300"></span>
                     </div>
 
                     <span class="font-display text-900-ink text-4xl font-bold">What I work with daily.</span>
@@ -296,6 +308,7 @@
                         modern web.</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+                    <!-- HTML -->
                     <div
                         class="skills-card1 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-orange-600">
                         <div
@@ -304,21 +317,13 @@
                         </div>
                         <div class="foot-part mt-4 font-body">
                             <span class="font-display text-900-ink font-bold">HTML5</span>
-                            <p class="text-500-ink mt-1.5 text-sm">Semantic, accessible markup structured for scale and
-                                SEO.</p>
-                            <div class="mt-4 h-2 w-full rounded-full bg-slate-200">
-                                <div class="h-full w-[95%] rounded-full bg-600-blue"></div>
-                            </div>
-                            <div class="flex justify-between items-center font-mono text-xs text-500-ink mt-2">
-                                <div class="flex">
-                                    <span>Proficiency</span>
-                                </div>
-                                <div class="">
-                                    <span>95%</span>
-                                </div>
-                            </div>
+                            <p class="text-500-ink mt-1.5 text-sm">Semantic, accessible and clean page layouts.</p>
                         </div>
+                        <div
+                            class="mt-4 bg-amber-600 h-8 flex items-center justify-center w-32 rounded-full text-white">
+                            Intermediate</div>
                     </div>
+                    <!-- CSS -->
                     <div
                         class="skills-card2 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-blue-800">
                         <div
@@ -329,19 +334,11 @@
                             <span class="font-display text-900-ink font-bold">CSS3</span>
                             <p class="text-500-ink mt-1.5 text-sm">Advanced layouts with Grid, Flexbox, and custom
                                 design systems.</p>
-                            <div class="mt-4 h-2 w-full rounded-full bg-slate-200">
-                                <div class="h-full w-[92%] rounded-full bg-600-blue"></div>
-                            </div>
-                            <div class="flex justify-between items-center font-mono text-xs text-500-ink mt-2">
-                                <div class="flex">
-                                    <span>Proficiency</span>
-                                </div>
-                                <div class="">
-                                    <span>92%</span>
-                                </div>
-                            </div>
                         </div>
+                        <div class="mt-4 h-8 w-32 bg-blue-600 text-white flex justify-center items-center rounded-full">
+                            Intermediate</div>
                     </div>
+                    <!-- TailwindCSS -->
                     <div
                         class="skills-card3 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-sky-500">
                         <div
@@ -352,19 +349,27 @@
                             <span class="font-display text-900-ink font-bold">Tailwind CSS</span>
                             <p class="text-500-ink mt-1.5 text-sm">Rapid, consistent UI development with utility-first
                                 styling.</p>
-                            <div class="mt-4 h-2 w-full rounded-full bg-slate-200">
-                                <div class="h-full w-[88%] rounded-full bg-600-blue"></div>
-                            </div>
-                            <div class="flex justify-between items-center font-mono text-xs text-500-ink mt-2">
-                                <div class="flex">
-                                    <span>Proficiency</span>
-                                </div>
-                                <div class="">
-                                    <span>88%</span>
-                                </div>
-                            </div>
                         </div>
+                        <div class="mt-4 h-8 w-32 bg-blue-400 text-white flex justify-center items-center rounded-full">
+                            Intermediate</div>
                     </div>
+                    <!-- JavaScript -->
+                    <div
+                        class="skills-card3 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-amber-400">
+                        <div
+                            class="lang-icon flex items-center justify-center h-auto w-12 px-6.5 py-3 bg-amber-400 rounded-sm">
+                            <span class="text-white font-bold text-lg">JS</span>
+                        </div>
+                        <div class="foot-part mt-4 font-body">
+                            <span class="font-display text-900-ink font-bold">Javascript (ES6+)</span>
+                            <p class="text-500-ink mt-1.5 text-sm">Learning core concepts, DOM manipulation, event
+                                handling, and building interactive web components.</p>
+                        </div>
+                        <div
+                            class="mt-4 h-8 w-40 bg-amber-400 text-white flex justify-center items-center rounded-full">
+                            Currently Learning</div>
+                    </div>
+                    <!-- Responsive Design -->
                     <div
                         class="skills-card4 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-violet-700">
                         <div
@@ -375,18 +380,10 @@
                             <span class="font-display text-900-ink font-bold">Responsive Design</span>
                             <p class="text-500-ink mt-1.5 text-sm">Fluid, mobile-first interfaces that adapt across
                                 every device.</p>
-                            <div class="mt-4 h-2 w-full rounded-full bg-slate-200">
-                                <div class="h-full w-[93%] rounded-full bg-600-blue"></div>
-                            </div>
-                            <div class="flex justify-between items-center font-mono text-xs text-500-ink mt-2">
-                                <div class="flex">
-                                    <span>Proficiency</span>
-                                </div>
-                                <div class="">
-                                    <span>93%</span>
-                                </div>
-                            </div>
                         </div>
+                        <div
+                            class="mt-4 h-8 w-32 bg-purple-700 text-white flex justify-center items-center rounded-full">
+                            Intermediate</div>
                     </div>
 
                 </div>
@@ -397,11 +394,11 @@
             <div class="container">
                 <div class="flex items-center flex-col ">
 
-                    <div
-                        class="flex items-center flex-col mb-5 px-4 py-2 rounded-full group">
+                    <div class="flex items-center flex-col mb-5 px-4 py-2 rounded-full group">
 
                         <span class="ml-2 text-2xl font-semibold text-600-blue font-display ">Get in touch</span>
-                        <span class="h-0.5 w-0 group-hover:w-24 text-center group-hover:bg-700-ink -m-0.5 ml-2 rounded-full transition-all duration-300"></span>
+                        <span
+                            class="h-0.5 w-0 group-hover:w-24 text-center group-hover:bg-700-ink -m-0.5 ml-2 rounded-full transition-all duration-300"></span>
                     </div>
                     <span class="font-display text-center font-bold text-900-ink text-3xl">Let's build something
                         great.</span>
@@ -417,13 +414,13 @@
                             <div class="form w-full md:w-7/12">
                                 <form action="">
                                     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                                        <div class="name flex-1">
+                                        <div class="name flex-1 w-full">
                                             <label for="name"
                                                 class="text-900-ink font-semibold text-sm font-body ml-1">Name</label>
                                             <input type="text" name="" id="name" placeholder="Your Full Name" required
                                                 class="bg-slate-50 w-full px-5 py-3 rounded-sm mt-1 focus:outline-none border border-500-ink focus:border-600-blue focus:border">
                                         </div>
-                                        <div class="email flex-1">
+                                        <div class="email flex-1 w-full">
                                             <label for="email"
                                                 class="text-900-ink font-semibold text-sm font-body ml-1">Email</label>
                                             <input type="email" name="" id="email" placeholder="you@exmaple.com"
@@ -463,7 +460,7 @@
                                         drop
                                         a message anytime.</p>
                                     <div class="grid grid-cols-1 mt-7 gap-y-2.5">
-                                        <a href="https://github.com/ItsLucky727" target="_blank">
+                                        <a href="https://github.com/iamluckymali" target="_blank" rel="noopener">
 
                                             <div
                                                 class="card1 bg-slate-50 hover:bg-[#050505] group flex flex-row h-auto hover:transition-transform hover:translate-x-3 duration-300 rounded-md px-5 py-3.5 gap-2.5">
@@ -476,30 +473,29 @@
                                                     <span
                                                         class="font-body text-900-ink font-semibold group-hover:text-white">Github
                                                         /
-                                                        ItsLucky</span>
+                                                        Lucky Mali</span>
 
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="https://www.youtube.com/@ItsLucky72" target="_blank">
+                                        <a href="https://www.linkedin.com/in/lucky-mali-68a182430/" target="_blank" rel="noopener">
 
                                             <div
-                                                class="card1 bg-slate-50 hover:bg-red-600 group flex flex-row h-auto hover:transition-transform hover:translate-x-3 duration-300 rounded-md px-5 py-3.5 gap-2.5">
+                                                class="card1 bg-slate-50 hover:bg-[#171616] group flex flex-row h-auto hover:transition-transform hover:translate-x-3 duration-300 rounded-md px-5 py-3.5 gap-2.5">
                                                 <div
-                                                    class="icon-github flex items-center shadow-xs h-auto w-fit bg-white group-hover:bg-red-500 rounded-md">
+                                                    class="icon-github flex items-center shadow-xs h-auto w-fit bg-white group-hover:bg-[#211e1e] rounded-md">
                                                     <i
-                                                        class="fa-brands fa-youtube text-600-blue group-hover:text-white text-xl px-4 py-4"></i>
+                                                        class="fa-brands fa-linkedin-in text-600-blue group-hover:text-white text-xl px-4 py-4"></i>
                                                 </div>
                                                 <div class="flex items-center">
                                                     <span
-                                                        class="font-body text-900-ink font-semibold group-hover:text-white">Youtube
-                                                        /
-                                                        ItsLucky</span>
+                                                        class="font-body text-900-ink font-semibold group-hover:text-white">Linkedin
+                                                        / Lucky Mali</span>
 
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="https://discord.gg/gMxeMAjaPX" target="_blank">
+                                        <a href="https://discord.gg/gMxeMAjaPX" target="_blank" rel="noopener">
 
                                             <div
                                                 class="card1 bg-slate-50 hover:bg-[#171616] group hover:transition-transform hover:translate-x-3 duration-300 flex flex-row h-auto rounded-md px-5 py-3.5 gap-2.5">
@@ -511,8 +507,7 @@
                                                 <div class="flex items-center">
                                                     <span
                                                         class="font-body text-900-ink font-semibold group-hover:text-white">Discord
-                                                        /
-                                                        ItsLucky</span>
+                                                        / Lucky</span>
 
                                                 </div>
                                             </div>
@@ -526,6 +521,7 @@
 
         </section>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </body>
+
 </html>

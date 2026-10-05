@@ -5,8 +5,10 @@ const cards = [
     ['#role', "'Web Developer'"],
     ['#html', "'HTML'"],
     ['#css', "'CSS'"],
+    ['#js', "'Javascript'"],
     ['#focus', "'clean UI'"],
-    ['#available', 'available']
+    ['#status', "'Learning Javascript'"],
+    ['#available', 'true']
 ];
 
 let index = 0;
@@ -17,7 +19,6 @@ function typeNext() {
     new Typed(element,{
         strings: [text],
         typeSpeed: 50,
-        backSpeed: 60,
         showCursor: false,
         onComplete: ()=>{
             index++
@@ -26,3 +27,21 @@ function typeNext() {
     });
 }
 typeNext();
+
+// document.addEventListener("keydown",(event)=>{
+//     if(event.shiftKey && event.ctrlKey && event.key === "C"){
+//         event.preventDefault();
+//     }
+//     if(event.key === "F12"){
+//         event.preventDefault();
+//     }
+// });
+// document.addEventListener("contextmenu",(e)=>{
+//     e.preventDefault();
+// });
+
+document.addEventListener("copy",(ev)=>{
+    ev.preventDefault();
+    const copyTxt = "Text copying is not allowed.";
+    ev.clipboardData.setData("text/plain", copyTxt);
+});
