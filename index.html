@@ -14,19 +14,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/Lucky_Logo.webp"
-</head>
-<style>
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 24px;
-    }
+    <link rel="icon" type="image/png" href="/assets/Lucky_Logo.webp" </head>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-    section {
-        padding: 100px 0;
-    }
-</style>
+        section {
+            padding: 100px 0;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e1e1e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #2563eb;
+            border-radius: 5px;
+        }
+    </style>
 
 <body>
     <header class="font-body border-[1.5px] border-b-100-gray sticky top-0 z-50 bg-white">
@@ -144,7 +153,7 @@
                         </div>
                     </div>
                     <div
-                        class="overflow-hidden h-auto md:h-72 md:w-full max-w-xl bg-900-ink rounded-3xl rotate-0 lg:rotate-[2.5deg] lg:hover:rotate-0 duration-300 shadow-md shadow-600-blue">
+                        class="card-snippet overflow-hidden h-auto md:h-72 md:w-full max-w-xl bg-900-ink rounded-3xl rotate-0 lg:rotate-[2.5deg] lg:hover:rotate-0 duration-300 shadow-md shadow-600-blue">
                         <div class="bg-[#111c33] px-5 py-4 flex items-center gap-x-2">
                             <div class="bg-[#ff5f56] h-2.5 w-2.5 rounded-full"></div>
                             <div class="bg-[#ffbd2e] h-2.5 w-2.5 rounded-full"></div>
@@ -202,9 +211,9 @@
                 <div class="flex justify-between sm:items-center flex-col md:flex-row mt-12 md:gap-x-16 gap-y-7">
                     <div
                         class="about-card shrink-0 flex flex-col items-center justify-center max-h-146 h-auto w-auto md:w-md max-w-md bg-white shadow-md rounded-3xl py-7 px-6">
-                        <div class="logo flex justify-center w-full rounded-sm object-cover">
-                            <img src="/assets/Lucky_Logo.webp" alt="logo" class="h-72 md:h-80 object-cover" draggable="false"
-                                fetchpriority="high">
+                        <div class="flex justify-center w-full rounded-sm object-cover">
+                            <img src="/assets/Lucky_Logo.webp" alt="logo" class="h-72 md:h-80 object-cover Logo"
+                                draggable="false" fetchpriority="high">
                         </div>
                         <div class="mt-7 text-center flex items-center flex-col justify-center">
                             <span class="text-900-ink font-bold font-display text-2xl">Lucky Mali</span>
@@ -238,8 +247,9 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <!-- Experience Card -->
                     <div
-                        class="box1 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        class="experience-card flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
                         <div
                             class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
                             <i class="fa-solid fa-shop"></i>
@@ -250,8 +260,9 @@
                                 startups & agencies.</p>
                         </div>
                     </div>
+                    <!-- Education Card -->
                     <div
-                        class="box2 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        class="education-card flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
                         <div
                             class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
                             <i class="fa-solid fa-graduation-cap"></i>
@@ -263,8 +274,9 @@
                                 modern front-end tooling..</p>
                         </div>
                     </div>
+                    <!-- Passion Card -->
                     <div
-                        class="box3 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        class="passion-card flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
                         <div
                             class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
                             <i class="fa-regular fa-heart"></i>
@@ -275,8 +287,9 @@
                                 and thoughtful details.</p>
                         </div>
                     </div>
+                    <!-- Goal Card -->
                     <div
-                        class="box4 flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
+                        class="goal-card flex flex-col px-5 py-6 rounded-xl bg-white h-auto shadow-sm hover:shadow-md hover:transition-transform hover:-translate-y-2 duration-300">
                         <div
                             class="icon flex items-center justify-center px-3 py-1 mb-2.5 h-12 w-12 rounded-sm bg-50-blue text-600-blue">
                             <i class="fa-solid fa-bullseye"></i>
@@ -310,7 +323,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
                     <!-- HTML -->
                     <div
-                        class="skills-card1 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-orange-600">
+                        class="html-card flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-orange-600">
                         <div
                             class="lang-icon flex items-center justify-center h-auto w-12 px-4 py-3.5 bg-orange-600 rounded-sm">
                             <i class="fa-solid fa-code text-white text-lg"></i>
@@ -325,7 +338,7 @@
                     </div>
                     <!-- CSS -->
                     <div
-                        class="skills-card2 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-blue-800">
+                        class="css-card flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-blue-800">
                         <div
                             class="lang-icon flex items-center justify-center h-auto w-12 px-4 py-3.5 bg-blue-800 rounded-sm">
                             <i class="fa-solid fa-hashtag text-white text-lg"></i>
@@ -340,7 +353,7 @@
                     </div>
                     <!-- TailwindCSS -->
                     <div
-                        class="skills-card3 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-sky-500">
+                        class="tailwind-card flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-sky-500">
                         <div
                             class="lang-icon flex items-center justify-center h-auto w-12 px-6.5 py-3 bg-sky-500 rounded-sm">
                             <span class="text-white font-bold text-lg">TW</span>
@@ -355,7 +368,7 @@
                     </div>
                     <!-- JavaScript -->
                     <div
-                        class="skills-card3 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-amber-400">
+                        class="javascript-card flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-amber-400">
                         <div
                             class="lang-icon flex items-center justify-center h-auto w-12 px-6.5 py-3 bg-amber-400 rounded-sm">
                             <span class="text-white font-bold text-lg">JS</span>
@@ -371,7 +384,7 @@
                     </div>
                     <!-- Responsive Design -->
                     <div
-                        class="skills-card4 flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-violet-700">
+                        class="responsive-card flex flex-col px-6 py-9 bg-white h-auto rounded-md shadow-xs hover:transition-transform hover:-translate-y-1.5 duration-300 border border-white hover:border-violet-700">
                         <div
                             class="lang-icon flex items-center justify-center h-auto w-12 px-4 py-3.5 bg-violet-700 rounded-sm">
                             <i class="fa-solid fa-table-cells text-white text-lg"></i>
@@ -478,7 +491,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/lucky-mali-68a182430/" target="_blank" rel="noopener">
+                                        <a href="https://www.linkedin.com/in/lucky-mali-68a182430/" target="_blank"
+                                            rel="noopener">
 
                                             <div
                                                 class="card1 bg-slate-50 hover:bg-[#171616] group flex flex-row h-auto hover:transition-transform hover:translate-x-3 duration-300 rounded-md px-5 py-3.5 gap-2.5">
@@ -522,6 +536,7 @@
         </section>
     </main>
     <script src="index.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>
